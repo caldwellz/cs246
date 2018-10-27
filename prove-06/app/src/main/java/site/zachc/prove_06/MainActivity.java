@@ -17,9 +17,8 @@ public class MainActivity extends AppCompatActivity {
   }
 
   protected void onBtnCreate(View view) {
-    // Make the integer list
+    // Pass a simple list of 1-10
     List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-
     new CreateFileTask().execute(new Pair<List<Integer>, String>(nums, FILENAME));
   }
 
